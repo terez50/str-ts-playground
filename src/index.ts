@@ -1,38 +1,14 @@
 import './style.scss';
 
-class Vehicle {
-    name: string;
+// Import the User class.
+import { User } from './model/user';
+import { Customer } from './model/customer';
 
-    /** @var {string} type - can be water, ground, air */
-    type: string;
+// Create some Customers.
+const customers: Customer[] = [
+    new Customer(),
+    new Customer(),
+    new Customer(),
+];
 
-    constructor(name: string) {
-        this.name = name;
-    }
-
-    move(from: number, to: number): string {
-        return `This vehicle is moving from ${from} to ${to}.`;
-    }
-}
-
-class GroundVehicle extends Vehicle {
-    type: string = 'ground';
-    wheels: number = 0;
-
-    constructor(name: string, wheels: number) {
-        super(name);
-        this.wheels = wheels;
-    }
-}
-
-class Lorry extends GroundVehicle {
-    capacity: number = 0;
-
-    constructor(name: string, wheels: number, capacity: number) {
-        super(name, wheels);
-        this.capacity = capacity;
-    }
-}
-
-const volvoTruck = new Lorry('GlobeTrotter', 12, 24000);
-console.log( volvoTruck.move(2, 44) );
+console.log( customers[1].pay(5) );
