@@ -14,3 +14,6 @@ Alapbeállítások a TypeScript alapú projektekhez.
 - `npm run serve`
 - Figyeld a live-server -el az index.html fájlt:
 - `dist/index.html`
+
+## Test
+- Issue012
