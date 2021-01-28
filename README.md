@@ -16,4 +16,4 @@ Alapbeállítások a TypeScript alapú projektekhez.
 - `dist/index.html`
 
 ## Test
-- Issue012
+- Issue011
