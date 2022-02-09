@@ -11,8 +11,12 @@ export class Admin extends User {
         console.log(`Admin logged in at ${time}.`);
         return true;
     }
-    
-    pay() {
-        return false;
-    };
+
+    pay(amount: number): boolean {
+        console.log(`Bill is ${amount} dollars.`);
+        console.log(`Discount: ${amount * .25} dollars.`);
+        console.log(`Admin paid ${amount * .75} dollars.`);
+        return true;
+    }
+
 }

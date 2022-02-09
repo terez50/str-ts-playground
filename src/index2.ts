@@ -14,10 +14,11 @@ const customers: Array<Customer> = [ // vagy customers: Customer[]
 console.log( customers[1].pay(25) );
 
 // Create some admins
-const admins: Array<Admin> = [ // vagy admins: Admin[]
+const admins: Admin[] = [
     new Admin(),
     new Admin(),
     new Admin()
 ];
 
 console.log( admins[1].login('12:30') );
+console.log( admins[1].pay(35) );

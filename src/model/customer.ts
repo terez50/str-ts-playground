@@ -7,6 +7,7 @@ export class Customer extends User {
     email = '';
 
     pay(amount: number): boolean {
+        console.log(`Bill is ${amount} dollars.`);
         console.log(`Customer paid ${amount} dollars.`);
         return true;
     }
