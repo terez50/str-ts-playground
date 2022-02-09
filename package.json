@@ -2,7 +2,7 @@
   "name": "str-ts-playground",
   "version": "0.0.1",
   "description": "Basic setup for TypeScript projects.",
-  "main": "src/index.ts",
+  "main": "src/index2.ts",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "serve": "webpack --config webpack.config.js --watch"
