@@ -8,7 +8,7 @@ interface IUser {
     vacuuming(time: number): string;
 }
 
-export class User implements IUser {
+export abstract class User implements IUser {
     id = 0; // a típust már az interface-ből tudja
     name = '';
     email = '';
@@ -16,4 +16,7 @@ export class User implements IUser {
     vacuuming(time: number): string {
         return `Hello, I am vacuuming for ${time} minutes.`;
     };
+
+    abstract pay(amount: number): boolean;
+
 }
