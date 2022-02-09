@@ -18,5 +18,6 @@ export abstract class User implements IUser {
     };
 
     abstract pay(amount: number): boolean;
+    // abstract login(time: string): boolean;
 
 }
